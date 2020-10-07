@@ -35,7 +35,7 @@ void testCalculateOverDueFine()
         long daysOverDue = Calendar.getInstance().getDaysDifference(dueDate);
         fine = daysOverDue * FINE_PER_DAY;
         System.out.println("Expected Fine $4" );
-        System.out.println("Actual Fine $  " +fine);
+        System.out.println("Actual Fine $  " + fine);
         assertNotEquals(4,fine);
     }
 }
